@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Karrik;
+    src: url(../fonts/TFF/Karrik-Regular.tff) format('truetype');
+    src: url(../fonts/WOFF/Karrik-Regular.woff) format('woff');
+    src: url(../fonts/WOFF2/Karrik-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: KarrikI;
+    src: url(../fonts/TFF/Karrik-Italic.tff) format('truetype');
+    src: url(../fonts/WOFF/Karrik-Italic.woff) format('woff');
+    src: url(../fonts/WOFF2/Karrik-Italic.woff2) format('woff2');
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;  /* vi que não devia declarar que era 16px e sim dizer que é 100% que é 16 px */
+}
+
+body {
+    font-family: Karrik;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    margin: auto;
+}
+
+
+h1, h2 {
+    font-size: 2rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    max-width: 38rem;
+}
+
+h4,
+p,
+a {
+    line-height: 1.5rem;
+    margin: 0;
+    max-width: 38rem;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+header,
+section {
+    margin-bottom: 5rem;
+}
+
+/* NAV */
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER */
+
+header p {
+    font-size: 1.5rem;
+    max-width: 54rem;
+}
+
+header figure {
+    /*resolver */
+    margin: 0;
+    margin-top: 10%;
+    width: 225px;
+    max-width: 50%;
+    max-height: 288px;
+    min-height: 185px; /*não é o valor certo */
+    margin-bottom: 16px;
+}
+
+header img {
+    /*resolver */
+   width: 100%; /*algo não esta certo */
+} 
+
+/* SECTION LATEST WORK */
+
+article {
+    margin-bottom: 4rem;
+}
+
+article h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;;
+}
+
+article p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+i {
+    margin: 0.25rem;
+    position: relative;
+    bottom: -1px;
+}
+
+
+article img {
+    /*resolver */
+   /* width: 100%;
+    max-height: 580px;
+    min-height: 300px;
+    object-fit: cover;
+    margin-right: 16px;*/
+} 
+
+.gallery-container {
+     /*resolver */
+   /* overflow-x: scroll;
+    overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+    display: flex;*/
+} 
+
+article img {
+    height: 100%;
+    margin-right: 16px;
+} 
+
+.gallery-container {
+    background-color: aqua;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    min-height: 300px;
+    height: 60vw;
+    max-height: 580px;
+} 
+
+/* SECTION ABOUT */
+
+#about h3 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#about h4 {
+    margin-bottom: 1rem;
+}
+
+.date {
+    font-family: KarrikI;
+    margin-bottom: 1rem;
+}
+
+.more-margin-bottom {
+    margin-bottom: 1rem;
+}
+
+/* SECTION CONTACT */
+
+#contact h3 {
+    margin-bottom: 2rem;
+}
+
+#contact a {
+    display: block;
+}
+
+
+/* FOOTER */
+footer p {
+    font-size: 0.75rem;
+    margin: 0;
+    line-height: 1rem;
+}
+
+/* tablet */
+@media (min-width: 778px) {
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 4%;
+        width: 19rem;
+    }
+
+    header p {
+        font-size: 3rem;
+        line-height: inherit;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+/* small desktop */
+@media (min-width: 1024px) {
+  
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    article a {
+        margin-top: 1rem;
+        align-self:flex-start; /* para o link ser só o texto, isto é o a não tem a altura toda do conteiner*/
+    }
+}
+
+/* large desktop */
+@media (min-width: 1260px) {}
